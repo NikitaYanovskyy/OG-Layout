@@ -1,0 +1,36 @@
+@font-face{
+    font-family: Poppins;
+    src: url('./fonts/Poppins-Light.ttf')
+}
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+section{
+    margin-top: 70px !important;
+}
+@mixin maxWidth{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+@import "./scss/achievements";
+@import "./scss/videos";
+@import "./scss/merchandise";
+
+
+
+@media screen and(max-width: 1024px){
+    .side-margin{
+        margin: 0 15px !important;
+    }
+    .merch-btn{
+        display: none;
+    }
+}
+
+
+
+
+

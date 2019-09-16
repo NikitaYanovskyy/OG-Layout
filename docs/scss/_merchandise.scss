@@ -1,0 +1,65 @@
+.merchandise{
+    position: relative;
+    @include maxWidth;
+}
+.merch-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 220px;
+    transform: translateY(-50%);
+}
+.merch-btn-next{
+    right: -50px;
+}
+.merch-btn-prev{
+    left: -50px;
+}
+#merchandise-carousel .owl-item{
+    &::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    right: -250px;
+    opacity: 0.5;
+    background: linear-gradient(266.59deg, rgba(105, 105, 105, 0.19)100%, rgba(97, 97, 97, 0) 141.28%);
+    width: 500px;
+    height: 400px;
+    transform: rotate(45deg); 
+    }
+
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(42, 38, 51);
+    height: 210px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+    h3{
+        color: yellow;
+        width: 200px;
+    }
+    img{
+        position: absolute;
+        width: 160px;
+        height: 190px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    button{
+        color: #fff;
+        margin-top: 30px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        padding: 5px 25px;
+        background-color: #d2003c;
+        border: none;
+        border-radius: 5%;
+        box-shadow: 0 5px 20px 0 rgb(0, 0, 0);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

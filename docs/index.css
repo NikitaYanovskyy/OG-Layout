@@ -1,0 +1,298 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+section {
+  margin-top: 70px !important;
+}
+
+.dota-achievments {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.dota-achievments-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-main-text {
+  margin: 20px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-main-text span {
+  color: green;
+}
+
+.section-main-text h1 {
+  text-transform: uppercase;
+  white-space: pre;
+}
+
+.section-main-text::after {
+  content: ' ';
+  width: 80px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin: 10px 0;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 20px;
+  background-color: #686868;
+}
+
+.btn:hover {
+  background-color: #8a8a8a;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+#achievements-carousel .owl-item div {
+  position: relative;
+  border-right: 1px solid #8b8b8b;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 145px;
+  background-color: #2a2633;
+}
+
+#achievements-carousel .owl-item div img {
+  margin: 10px 0;
+  width: 45px;
+  height: 45px;
+}
+
+#achievements-carousel .owl-item div::after {
+  content: ' ';
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  right: -350px;
+  opacity: 0.5;
+  background: linear-gradient(266.59deg, rgba(105, 105, 105, 0.19) 100%, rgba(97, 97, 97, 0) 141.28%);
+  width: 500px;
+  height: 400px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#achievements-carousel .owl-item div:hover::after {
+  right: -250px;
+  background: linear-gradient(266.59deg, rgba(167, 167, 167, 0.19) 100%, #e7e7e7 1.28%);
+}
+
+.videos {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#videos-carousel .owl-item div {
+  background-color: #000;
+  position: relative;
+  cursor: pointer;
+}
+
+#videos-carousel .owl-item div a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#videos-carousel .owl-item div img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#videos-carousel .owl-item div h4 {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#videos-carousel .owl-item div button {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  background-color: #d2003c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+
+#videos-carousel .owl-item div:hover img {
+  opacity: 0.5;
+}
+
+#videos-carousel .owl-item div:hover button {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.merchandise {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.merch-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 220px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.merch-btn-next {
+  right: -50px;
+}
+
+.merch-btn-prev {
+  left: -50px;
+}
+
+#merchandise-carousel .owl-item {
+  position: relative;
+  border-radius: 10px;
+  background-color: #2a2633;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  color: #fff;
+}
+
+#merchandise-carousel .owl-item::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -200px;
+  right: -250px;
+  opacity: 0.5;
+  background: linear-gradient(266.59deg, rgba(105, 105, 105, 0.19) 100%, rgba(97, 97, 97, 0) 141.28%);
+  width: 500px;
+  height: 400px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#merchandise-carousel .owl-item h3 {
+  color: yellow;
+  width: 200px;
+}
+
+#merchandise-carousel .owl-item img {
+  position: absolute;
+  width: 160px;
+  height: 190px;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#merchandise-carousel .owl-item button {
+  color: #fff;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 5px 25px;
+  background-color: #d2003c;
+  border: none;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 5px 20px 0 black;
+          box-shadow: 0 5px 20px 0 black;
+}
+
+#merchandise-carousel .owl-item button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+  .side-margin {
+    margin: 0 15px !important;
+  }
+  .merch-btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
