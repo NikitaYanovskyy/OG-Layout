@@ -1,5 +1,6 @@
 .videos{
     @include maxWidth;
+    margin-top: 70px !important;
 }
 #videos-carousel  .owl-item div{
     background-color: #000;

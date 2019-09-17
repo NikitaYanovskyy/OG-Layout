@@ -1,4 +1,30 @@
 $(document).ready(function(){
+/////////////////////////////////////Games Carousel
+var games = $('#game-carousel');
+games.owlCarousel({
+    dots: false,
+    loop: true,
+    responsive:{
+        0:{
+            items:1,
+            margin:0
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+$('.game-btn-prev').click(()=>{
+    games.trigger('prev.owl.carousel')
+})
+$('.game-btn-next').click(()=>{
+    games.trigger('next.owl.carousel')
+})
+
+
 
 /////////////////////////////////////Achievements Carousel
     var achievements = $('#achievements-carousel');

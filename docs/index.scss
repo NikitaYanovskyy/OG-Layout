@@ -2,14 +2,17 @@
     font-family: Poppins;
     src: url('./fonts/Poppins-Light.ttf')
 }
+$Color: #111c38;
+$Red: #d2003c;
 *,*:before,*:after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
 }
-section{
-    margin-top: 70px !important;
+
+body{
+    background-image: url(./other-images/background.webp);
 }
 @mixin maxWidth{
     max-width: 1180px;
@@ -18,12 +21,14 @@ section{
 @import "./scss/achievements";
 @import "./scss/videos";
 @import "./scss/merchandise";
+@import "./scss/games";
+@import "./scss/landing";
 
 
 
 @media screen and(max-width: 1024px){
     .side-margin{
-        margin: 0 15px !important;
+        margin: 0 15px;
     }
     .merch-btn{
         display: none;

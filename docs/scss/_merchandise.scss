@@ -1,6 +1,7 @@
 .merchandise{
     position: relative;
     @include maxWidth;
+    margin-top: 70px !important;
 }
 .merch-btn{
     cursor: pointer;
@@ -54,7 +55,7 @@
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         padding: 5px 25px;
-        background-color: #d2003c;
+        background-color: $Red;
         border: none;
         border-radius: 5%;
         box-shadow: 0 5px 20px 0 rgb(0, 0, 0);
