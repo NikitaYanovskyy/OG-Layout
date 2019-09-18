@@ -19,6 +19,9 @@
         text-transform: uppercase;
         white-space: pre;
     }
+    p{
+        font-weight: bold;
+    }
     &::after{
         content: ' ';
         width: 80px;
@@ -26,6 +29,15 @@
         background-color: #000;
         display: block;
         margin: 10px 0;
+    }
+    button{
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: green;
+        border: none;
+        padding: 10px 25px;
+        margin-top: 10px;
     }
 }
 .btn{

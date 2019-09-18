@@ -2,14 +2,16 @@
     height: 100vh;
 }
 .nav{
+    height: 82px;
     position: fixed;
     z-index: 1000;
     right: 0;
     left: 0;
     display: flex;
-    background: linear-gradient(90deg, $Color , rgb(84, 84, 99) , $Color);
+    background: linear-gradient(270deg, #191e2b 0%, #333b54 52.08%, #141822 100%), #191e2b;
     border-bottom: 3px solid green;
     img{
+        z-index: 1000;
         position: absolute;
         width: 68px;
         height: 100px;
@@ -33,10 +35,11 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
-        span{
+        div{
+            font-size: 1px;
             transition: all 0.3s ease;
-            width: auto;
-            height: 1px;
+            width: 98%;
+            height: 2px;
             background-color: $Red;
             opacity: 0;
         }
@@ -44,7 +47,7 @@
             a{
                 color: $Red;
             }
-            span{
+            div{
                 opacity: 1;
             }
         }
@@ -53,7 +56,7 @@
         a{
             color: $Red;
         }
-        span{
+        div{
             opacity: 1;
         } 
     }
@@ -66,7 +69,7 @@
     justify-content: space-around;
     margin: 30px 10px;
     a{
-        margin: 0 7px;
+        margin: 0 5px;
         svg{
             transition: all 0.3s ease-in-out;
             display: block;
@@ -106,13 +109,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid green;
-    width: 60px;
+    width: 50px;
     height: 40px;
-    .burger-menu{
-        width: 70%;
-        height: 50%;
-        position: relative;
-    }
     span{
         position: absolute;
         top: 50%;

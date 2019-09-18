@@ -1,4 +1,36 @@
 $(document).ready(function(){
+/////////////////////////////////////Menu Button
+var menuButton = $('.burger-menu-wrapper');
+var menu = $('.menu');
+menuButton.click(()=>{
+    menuButton.toggleClass('green');
+    menu.toggleClass('block');
+})
+////////////////////////////////////Landing Carousel
+var landing = $(`#landing-carousel`);
+landing.owlCarousel({
+    margin: 10,
+    loop: true,
+    dots: true,
+    nav: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+$('.landing-next').click(()=>{
+    landing.trigger('next.owl.carousel');
+})
+$('.landing-prev').click(()=>{
+    landing.trigger('prev.owl.carousel');
+})
 /////////////////////////////////////Games Carousel
 var games = $('#game-carousel');
 games.owlCarousel({
@@ -18,13 +50,177 @@ games.owlCarousel({
     }
 });
 $('.game-btn-prev').click(()=>{
-    games.trigger('prev.owl.carousel')
+    games.trigger('prev.owl.carousel');
 })
 $('.game-btn-next').click(()=>{
-    games.trigger('next.owl.carousel')
+    games.trigger('next.owl.carousel');
+})
+
+/////////////////////////////////////////Players Icon Animation
+var player = $('.player');
+player.eq(0).mouseover(()=>{
+    $('*[data-num="1"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+})
+player.eq(0).mouseout(()=>{
+    $('*[data-num="1"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+})
+player.eq(1).mouseover(()=>{
+    $('*[data-num="2"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+})
+player.eq(1).mouseout(()=>{
+    $('*[data-num="2"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+})
+player.eq(2).mouseover(()=>{
+    $('*[data-num="3"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+    $('*[data-num="4"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+    $('*[data-num="5"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+})
+player.eq(2).mouseout(()=>{
+    $('*[data-num="3"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+    $('*[data-num="4"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+    $('*[data-num="5"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+})
+
+player.eq(3).mouseover(()=>{
+    $('*[data-num="6"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+    $('*[data-num="7"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+    $('*[data-num="8"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+})
+player.eq(3).mouseout(()=>{
+    $('*[data-num="6"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+    $('*[data-num="7"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+    $('*[data-num="8"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
 })
 
 
+player.eq(4).mouseover(()=>{
+    $('*[data-num="9"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+    $('*[data-num="10"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 0`,
+            opacity: 1
+        })
+        next()
+    });
+})
+player.eq(4).mouseout(()=>{
+    $('*[data-num="9"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+    $('*[data-num="10"]').queue(function(next){
+        $(this).css({
+            margin: ` 5px 0 0 -80px`,
+            opacity: 0
+        })
+        next()
+    });
+})
 
 /////////////////////////////////////Achievements Carousel
     var achievements = $('#achievements-carousel');
