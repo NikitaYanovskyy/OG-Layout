@@ -36,6 +36,7 @@ body{
 @import "./scss/landing-content";
 @import "./scss/players";
 @import "./scss/news";
+@import "./scss/footer";
 
 ///////////////////////////////////////////////////Media 1024
 @media screen and(max-width: 1024px){
@@ -90,6 +91,43 @@ body{
     .player{ 
         width: 100%;
         margin: 10px 0;
+    }
+    //////////////////////////////////////////////////////Footer
+    footer{
+        h3{
+            margin-top: 50px;
+        }
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .story{
+        margin-top: 0;
+    }
+    .footer-story :first-child{
+        margin-top: 0 !important;
+    }
+    .footer-resent-posts{
+        margin-left: 0;
+    }
+    .footer-pages{
+        ul{
+            float: left;
+        }
+        li{
+            float: left;
+            margin-right: 10px;
+        }
+        
+    }
+    .footer-socials{
+        ul{
+            float: left;
+        }
+        li{
+            margin-right: 10px;
+            float: left;
+        }
     }
 }
 ///////////////////////////////////////////////////Media 768
@@ -152,6 +190,15 @@ body{
     }
     .news1{
         height: 400px;
+    }
+    ///////////////////////////////////////////////////////////Footer
+    .footer-copyright{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            margin: 5px 0;
+        }
     }
 }
 
