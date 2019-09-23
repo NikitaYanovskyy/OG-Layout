@@ -1,4 +1,60 @@
 $(document).ready(function(){
+/////////////////////////////////////Up Button
+$(window).scroll(function(){
+    if($(this).scrollTop() > 50){
+        $('.up-button').css({
+            marginRight: 0,
+            opacity: 1
+        })
+    }else{
+        $('.up-button').css({
+            marginRight: -80,
+            opacity: 0
+        })
+    }
+    
+   
+})
+$('.team').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
+$(window).scroll(function(){
+    if($(this).scrollTop() > $('.team').offset().top/2){
+        $('.team').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
+    }
+})
+$('.dota-achievments').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
+$(window).scroll(function(){
+    if($(this).scrollTop() > ($('.dota-achievments').offset().top -300)){
+        $('.dota-achievments').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
+
+    }
+})
+$(window).scroll(function(){
+    if($(this).scrollTop() > ($('.news').offset().top - 300)){
+        $('.news-grid').css('margin-top','0');
+        $('.news-grid').css('opacity','1');
+    }
+})
+$('.videos').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
+$(window).scroll(function(){
+    if($(this).scrollTop() > ($('.videos').offset().top - 300)){
+        $('.videos').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
+
+    }
+})
+$('.merchandise').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
+$(window).scroll(function(){
+    if($(this).scrollTop() > ($('.merchandise').offset().top - 300)){
+        $('.merchandise').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
+
+    }
+})
+$('.up-button').click(()=>{
+    $('body , html').animate({
+        scrollTop: 0
+    }, 'slow')
+})
+$('.section-margin:nth-child(1)').css('display' , 'none');
+
 /////////////////////////////////////Menu Button
 var menuButton = $('.burger-menu-wrapper');
 var menu = $('.menu');

@@ -1,7 +1,7 @@
 .merchandise{
+    transition: all 0.5s ease-in-out;
     position: relative;
     @include maxWidth;
-    margin-top: 70px !important;
 }
 .merch-btn{
     cursor: pointer;

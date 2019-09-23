@@ -37,12 +37,13 @@ footer{
     display: flex;
 }
 .story{
-    flex:1;
+    flex:2;
     display: flex;
     margin-top: 3px;
 }
 .footer-resent-posts{
-    flex:1;
+    margin-left: 50px;
+    flex:2;
     li{
         margin-bottom: 16px;
     }
@@ -60,6 +61,7 @@ footer{
     border-top: 1px solid rgb(50, 50, 199);
 }
 .footer-copyright{
+    text-align: center;
     padding: 25px 0;
     @include maxWidth;
     display: flex;

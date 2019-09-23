@@ -1,5 +1,6 @@
 .dota-achievments{
     @include maxWidth;
+    transition: all 0.5s ease-in-out;
 }
 .dota-achievments-wrapper{
     position: relative;

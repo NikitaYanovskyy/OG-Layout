@@ -21,8 +21,9 @@ body{
 .block{
     display: block !important;
 }
-.section-margin{
+.animation-fix{
     margin-top: 50px !important;
+    opacity: 1 !important;
 }
 @mixin maxWidth{
     max-width: 1280px;
@@ -37,7 +38,27 @@ body{
 @import "./scss/players";
 @import "./scss/news";
 @import "./scss/footer";
-
+////////////////////////////////////////////Button
+.up-button{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    ///animation
+    margin-right: -80px;
+    opacity: 0;
+    ////////////
+    z-index: 1000;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #23293b;
+    border: 3px solid #458644;
+    transform: rotate(45deg);
+}
 ///////////////////////////////////////////////////Media 1024
 @media screen and(max-width: 1024px){
     .side-margin{
@@ -200,6 +221,15 @@ body{
             margin: 5px 0;
         }
     }
+}
+@media screen and (max-width: 425px){
+    /////////////////////////////////////////////////////Player Icons
+.player-icon-wrapper{
+    a{
+        margin: 0 0 10px 0;
+        opacity: 1;
+    }
+}
 }
 
 

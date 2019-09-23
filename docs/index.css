@@ -24,13 +24,16 @@ body {
   display: block !important;
 }
 
-.section-margin {
+.animation-fix {
   margin-top: 50px !important;
+  opacity: 1 !important;
 }
 
 .dota-achievments {
   max-width: 1280px;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .dota-achievments-wrapper {
@@ -162,9 +165,10 @@ body {
 }
 
 .videos {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 70px !important;
 }
 
 #videos-carousel .owl-item div {
@@ -232,10 +236,11 @@ body {
 }
 
 .merchandise {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 70px !important;
 }
 
 .merch-btn {
@@ -758,6 +763,9 @@ body {
 }
 
 .team {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -882,7 +890,7 @@ body {
 .player-icon-wrapper a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin: 5px 0 0 -80px;
+  margin: 0 0 10px -80px;
   opacity: 0;
 }
 
@@ -910,6 +918,7 @@ body {
 }
 
 .news {
+  margin-top: 100px !important;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -922,6 +931,10 @@ body {
 }
 
 .news-grid {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+  margin-top: 100px;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
@@ -1097,9 +1110,9 @@ footer li {
 }
 
 .story {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1107,9 +1120,10 @@ footer li {
 }
 
 .footer-resent-posts {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin-left: 50px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .footer-resent-posts li {
@@ -1142,6 +1156,33 @@ footer li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.up-button {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  margin-right: -80px;
+  opacity: 0;
+  z-index: 1000;
+  right: 30px;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #23293b;
+  border: 3px solid #458644;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1310,6 +1351,13 @@ footer li {
   }
   .footer-copyright p {
     margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .player-icon-wrapper a {
+    margin: 0 0 10px 0;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=index.css.map */

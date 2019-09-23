@@ -1,4 +1,6 @@
 .team{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
     @include maxWidth;
 }
 .players{
@@ -87,7 +89,7 @@
     align-items: center;
     a{
         transition: all 0.3s ease-in-out;
-        margin: 5px 0 0 -80px;
+        margin: 0 0 10px -80px;
         opacity: 0;
         &:hover{
             .twitter{
