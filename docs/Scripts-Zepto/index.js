@@ -23,27 +23,27 @@ $(window).scroll(function(){
 })
 $('.dota-achievments').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
 $(window).scroll(function(){
-    if($(this).scrollTop() > ($('.dota-achievments').offset().top -300)){
+    if($(this).scrollTop() > ($('.dota-achievments').offset().top -500)){
         $('.dota-achievments').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
 
     }
 })
 $(window).scroll(function(){
-    if($(this).scrollTop() > ($('.news').offset().top - 300)){
+    if($(this).scrollTop() > ($('.news').offset().top - 500)){
         $('.news-grid').css('margin-top','0');
         $('.news-grid').css('opacity','1');
     }
 })
 $('.videos').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
 $(window).scroll(function(){
-    if($(this).scrollTop() > ($('.videos').offset().top - 300)){
+    if($(this).scrollTop() > ($('.videos').offset().top - 500)){
         $('.videos').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
 
     }
 })
 $('.merchandise').attr('style', 'margin-top: 150px !important; opacity: 0 !important');
 $(window).scroll(function(){
-    if($(this).scrollTop() > ($('.merchandise').offset().top - 300)){
+    if($(this).scrollTop() > ($('.merchandise').offset().top - 500)){
         $('.merchandise').attr('style', 'margin-top: 50px !important; opacity: 1 !important');
 
     }

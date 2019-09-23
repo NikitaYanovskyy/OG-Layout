@@ -252,11 +252,11 @@ body {
 }
 
 .merch-btn-next {
-  right: -50px;
+  right: -40px;
 }
 
 .merch-btn-prev {
-  left: -50px;
+  left: -40px;
 }
 
 #merchandise-carousel .owl-item {
@@ -1156,6 +1156,7 @@ footer li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 
 .up-button {
